@@ -1,0 +1,14 @@
+{
+  "addNewMembers": "Neue Mitglieder hinzufügen",
+  "invite": "Einladen",
+  "herdMembers": "Herdenmitglieder",
+  "inviteNewMembers": "Neue Mitglieder einladen",
+  "members": "Mitglieder",
+  "member": "Mitglied",
+  "action": {
+    "invite": "{{entity}} wurde eingeladen",
+    "delete": "{{entity}} wurde gelöscht",
+    "processing": "Verarbeitung"
+  },
+  "sameMembers": "Dieselben E-Mails werden angegeben"
+}

@@ -1,0 +1,64 @@
+{
+  "accountPageHeader": {
+    "subText": "Наслаждайтесь премиум-функциями с ежемесячной подпиской.",
+    "text": "Аккаунт"
+  },
+  "descriptions": {
+    "alpacaAssociations": "Для новых и существующих ассоциаций, желающих предложить преимущества для участников.",
+    "alpacaBreeder": "Для серьезного заводчика {{ appNameLowerAccusativeCase }}, ищущего дополнительные возможности.",
+    "alpacaOwner": "Для каждого владельца {{ appNameLowerAccusativeCase }}, желающего поправить здоровье своего стада.",
+    "developer": "Для новых и существующих ассоциаций, желающих предложить преимущества для участников."
+  },
+  "names": {
+    "alpacaAssociations": "Ассоциация {{ appNameLowerAccusativeCase }}",
+    "alpacaBreeder": "Заводчик {{ appNameLowerAccusativeCase }}",
+    "alpacaOwner": "Владелец {{ appNameLowerAccusativeCase }}",
+    "developer": "Разработчик"
+  },
+  "prices": {
+    "freeForEveryone": "Бесплатно для всех",
+    "letsHaveAChat": "Свяжитесь с нами",
+    "perMemberSubscription": "Подписка участника",
+    "perMonth": "{{ context }}/месяц"
+  },
+  "advantages": {
+    "alpacaOwner": [
+      "Неограниченный учет {{ appNameLowerAccusativeCase }}",
+      "Неограниченные {{ herdsGenitiveCase }} и группы",
+      "Полный профиль реестра {{ appNameLowerAccusativeCase }}",
+      "Делитесь записями с другими пользователями",
+      "Учет лекарств с напоминаниями",
+      "Учет стрижек и шерсти",
+      "Поиск {{ appNameLowerAccusativeCase }} на продажу по всему миру",
+      "Бесплатные мобильные приложения",
+      "Загрузка изображений"
+    ],
+    "alpacaBreeder": [
+      "Включает функции $t(billingPlans.names.alpacaOwner)",
+      "Список {{ appNameLowerAccusativeCase }} для продажи",
+      "Маркетинговые инструменты для продавцов {{ appNameLowerAccusativeCase }}",
+      "Отсутствие минимального срока контракта"
+    ],
+    "alpacaAssociations": [
+      "Включает функции $t(billingPlans.names.alpacaBreeder)",
+      "Управление выставками",
+      "Управление членством",
+      "Обработка платежа",
+      "Маркетинговые инструменты",
+      "Каталог членства",
+      "Регистрация новых {{ appNameLowerAccusativeCase }}",
+      "Самостоятельное администрирование",
+      "Зарегистрированная передача права собственности"
+    ],
+    "developer": [
+      "Расширение существующих приложений",
+      "Интеграция с сельхоз техникой",
+      "Выполнение офлайн-аналитики",
+      "Добавление новых функций и инструментов",
+      "Торговля с другими пользователями онлайн",
+      "Техподдержка разработчиков",
+      "Самостоятельное администрирование"
+    ]
+  },
+  "thisIsAlreadyUrCurrentPlan": "Этот план уже выбран"
+}

@@ -1,0 +1,26 @@
+.note-datepicker {
+  width: 115px;
+
+  .input-group{
+    @include poppins-m-font;
+  }
+}
+
+.notes-tab-date-picker.form-control {
+  height: 20px;
+  min-height: 20px;
+  padding: 0;
+  border: none;
+  flex: 1 0 auto;
+  background-color: transparent;
+  background-image: url('/icons/pencil.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 12px 12px;
+  background-position-y: 3px;
+  cursor: pointer;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

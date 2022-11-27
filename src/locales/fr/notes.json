@@ -1,0 +1,11 @@
+{
+  "myNotes": "Mes notes",
+  "notes": "Remarques",
+  "note": "La note",
+
+  "noteDelete": "Note Supprimer",
+  "deleteNoteConfirm": "La note sera supprimée définitivement",
+  "notePlaceholder": "Ecrivez une note ici...",
+  "addNote": "Ajouter une note",
+  "emptyNote": "La note ne peut pas être vide !"
+}

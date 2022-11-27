@@ -1,0 +1,44 @@
+.under-dev {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex: 0 !important;
+
+  @include flexible-value((
+          prop: padding-top,
+          value: 50px !important,
+          value-xs: 100px !important,
+  ));
+
+  .page-content {
+    display: flex;
+    flex-direction: column;
+
+    .under-dev-image {
+      align-self: center;
+      @include flexible-value((
+        prop: width,
+        value: 366px,
+        value-xs: 190px,
+      ));
+
+      @include flexible-value((
+        prop: height,
+        value: 277px,
+        value-xs: 144px,
+      ));
+    }
+
+    .under-dev-message {
+      @include flexible-value((
+        prop: margin-top,
+        value: 32px,
+        value-xs: 16px,
+      ));
+
+      @include profile-name-font;
+    }
+  }
+}

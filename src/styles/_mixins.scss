@@ -1,0 +1,201 @@
+@mixin transition($prop-name: all) {
+  transition: $prop-name .2s ease-in-out;
+}
+
+@mixin glassmorphism($color: $white, $opacity: 0.75) {
+  background: rgba($color, $opacity);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(27.1828px);
+}
+
+@mixin poppins-m-font {
+  font-family: $secondary-font, $font-family-base;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin poppins-l-font {
+  font-family: $secondary-font, $font-family-base;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+@mixin inter-m-font {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+@mixin main-title-font{
+  font-family: $secondary-font, $font-family-base;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 30px;
+    line-height: 44px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 66px;
+  }
+}
+
+@mixin default-font-size {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@mixin flexible-default-font-size {
+  font-size: 16px;
+  line-height: 22px;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+@mixin profile-name-font {
+  font-family: $secondary-font, $font-family-base;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 500;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+
+@mixin label-font-size{
+  font-size: 12px;
+  line-height: 20px;
+}
+
+// prop — e.g. 'padding' or 'border'
+// directions — e.g. 'left' or 'right' => for prop 'padding' we'll get — 'padding-left' and 'padding-right'
+// values — max-values, for > 1200px
+// values-lg — values for interval 992px-1199px
+// values-md — values for interval 768-991px
+// values-sm — values for interval 576-767px
+// values-xs — values for <576px
+@mixin flexible-values($args) {
+  $prop-name: map-get($args, prop);
+  $directions: map-get($args, directions);
+  $values: map-get($args, values); // xl
+  $values-lg: map-get($args, values-lg); // lg
+  $values-md: map-get($args, values-md); // md
+  $values-sm: map-get($args, values-sm); // sm
+  $values-xs: map-get($args, values-xs); // xs
+  $use-transition: map-get($args, use-transition);
+
+  @if not $prop-name {
+    @warn "Prop name is required";
+  }
+
+  @if not $values {
+    @warn "Values is required";
+  }
+
+  @if not $directions {
+    @warn "Directions is required";
+  }
+
+  // if the point doesn't have a value, we use the value for the larger point
+  $values-lg: if($values-lg, $values-lg, $values);
+  $values-md: if($values-md, $values-md, $values-lg);
+  $values-sm: if($values-sm, $values-sm, $values-md);
+  $values-xs: if($values-xs, $values-xs, $values-sm);
+
+  @for $i from 1 through length($directions) {
+    $direction: nth($directions, $i);
+    $value: nth($values, $i);
+    $value-lg: nth($values-lg, $i);
+    $value-md: nth($values-md, $i);
+    $value-sm: nth($values-sm, $i);
+    $value-xs: nth($values-xs, $i);
+
+    #{$prop-name + "-" + $direction}: $value-xs;
+
+    @include media-breakpoint-up(sm) {
+      #{$prop-name + "-" + $direction}: $value-sm;
+    }
+
+    @include media-breakpoint-up(md) {
+      #{$prop-name + "-" + $direction}: $value-md;
+    }
+
+    @include media-breakpoint-up(lg) {
+      #{$prop-name + "-" + $direction}: $value-lg;
+    }
+
+    @include media-breakpoint-up(xl) {
+      #{$prop-name + "-" + $direction}: $value;
+    }
+  }
+
+  // animation
+  @if $use-transition {
+    @include transition($prop-name);
+  }
+}
+
+// prop — e.g. 'padding' or 'border'
+// value — max-values, for > 1200px
+// value-lg — value for interval 992px-1199px
+// value-md — value for interval 768-991px
+// value-sm — value for interval 576-767px
+// value-xs — value for <576px
+@mixin flexible-value($args) {
+  $prop-name: map-get($args, prop);
+  $value: map-get($args, value); // xl
+  $value-lg: map-get($args, value-lg); // lg
+  $value-md: map-get($args, value-md); // md
+  $value-sm: map-get($args, value-sm); // sm
+  $value-xs: map-get($args, value-xs); // xs
+  $use-transition: map-get($args, use-transition);
+
+  // if the point doesn't have a value, we use the value for the larger point
+  $value-lg: if($value-lg, $value-lg, $value);
+  $value-md: if($value-md, $value-md, $value-lg);
+  $value-sm: if($value-sm, $value-sm, $value-md);
+  $value-xs: if($value-xs, $value-xs, $value-sm);
+
+  @if not $prop-name {
+    @warn "Prop name is required";
+  }
+
+  @if not $value {
+    @warn "Value is required";
+  }
+
+  #{$prop-name}: $value-xs;
+
+  @include media-breakpoint-up(sm) {
+    #{$prop-name}: $value-sm;
+  }
+
+  @include media-breakpoint-up(md) {
+    #{$prop-name}: $value-md;
+  }
+
+  @include media-breakpoint-up(lg) {
+    #{$prop-name}: $value-lg;
+  }
+
+  @include media-breakpoint-up(xl) {
+    #{$prop-name}: $value;
+  }
+
+  // animation
+  @if $use-transition {
+    @include transition($prop-name);
+  }
+}

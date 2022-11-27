@@ -1,0 +1,288 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: $round-md;
+  white-space: nowrap;
+  min-height: 48px;
+
+  .spinner {
+    width: 24px;
+    height: 24px;
+  }
+
+  @include poppins-m-font;
+
+  &.btn-primary {
+    border-color: $primary;
+    background-color: $primary;
+    color: $neutral-900;
+    font-weight: 500;
+    transition: background-color .2s ease, box-shadow .2s ease;
+
+    &:not(.danger-btn):hover {
+      background-color: $primary-600;
+      box-shadow: $primary-btn-focus-shadow;
+    }
+
+    &:not(.danger-btn):focus {
+      background-color: $primary-600;
+      box-shadow: $primary-btn-focus-shadow;
+    }
+
+    &:not(.danger-btn):active {
+      background-color: $primary-700;
+    }
+  }
+
+  &.delete {
+    path {
+      transition: stroke .2s ease;
+    }
+   
+    &:hover {
+      path {
+        stroke: $error-500;
+      }
+    }
+  }
+
+  &.danger-btn {
+    border-color: $error-500;
+    background-color: $error-500;
+    color: $white;
+
+    &:hover {
+      background-color: $error-600;
+    }
+
+    &:focus {
+      background-color: $error-600;
+    }
+
+    &:active {
+      background-color: $error-600;
+    }
+  }
+
+  &.btn-secondary {
+    font-family: $primary-font;
+    color: $neutral-900;
+    font-weight: 400;
+    transition: color .2s ease;
+    border: 0;
+    outline: 0;
+
+    &:hover {
+      background-color: transparent;
+      color: $primary;
+      box-shadow: none;
+      border: 0;
+      outline: 0;
+    }
+
+    &:focus {
+      background-color: transparent;
+      color: $primary;
+      box-shadow: none;
+      border: 0;
+      outline: 0;
+    }
+
+    &:active {
+      background-color: transparent;
+      color: $primary;
+      box-shadow: none;
+      border: 0;
+      outline: 0;
+    }
+  }
+
+  &.btn-link {
+    font-family: $font-family-base, $secondary-font;
+    @include label-font-size;
+    color: $link-font-color;
+  }
+
+  &.translucent {
+    border-color: #fffa;
+    background-color: #fff8;
+
+    &:focus,
+    &:hover {
+      background-color: #fffc;
+    }
+  }
+
+  &.btn-transparent {
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  &.clear-btn {
+    height: auto;
+    padding: 0;
+  }
+  
+  &.create-btn{
+    padding: 12px 16px 12px 42px;
+
+    .create-btn-text {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 46%;
+        left: -25px;
+        width: 12px;
+        height: 12px;
+        background-image: url('/icons/plus.svg');
+        transform: translateY(-50%);
+      }
+    }
+
+    &:not(.empty) {
+      @include flexible-value((
+        prop: min-width,
+        value: 167px,
+        value-xs: 100%,
+      ));
+    }
+  }
+}
+
+.page-body {
+  .btn[type='submit'] {
+    margin-left: auto;
+    min-width: 150px;
+  }
+}
+
+.layout {
+  .layout-content {
+    .page-body {
+      .date-picker{
+        .btn {
+          border-color: $primary;
+          background-color: $primary;
+          color: $neutral-900;
+          font-weight: 500;
+          transition: background-color .2s ease, box-shadow .2s ease;
+      
+          &:hover {
+            background-color: $primary-600;
+            box-shadow: $primary-btn-focus-shadow;
+          }
+      
+          &:focus {
+            background-color: $primary-600;
+            box-shadow: $primary-btn-focus-shadow;
+          }
+      
+          &:active {
+            background-color: $primary-700;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+.btn-group {
+  padding: 0;
+
+  .dropdown-toggle-split {
+    padding: 6px auto;
+
+    @include flexible-values((
+      prop: padding,
+      directions: (right left),
+      values: (30px, 15px),
+      values-lg: (15px, 7.5px),
+    ));
+
+
+    &:after {
+      content: '⋮';
+      border: 0;
+      font-size: 20px;
+    }
+  }
+
+  .edit-button:not(.dropdown-toggle) {
+    padding: 6px auto;
+
+    @include flexible-values((
+      prop: padding,
+      directions: (right left),
+      values: (15px, 30px),
+      values-lg: (7.5px, 15px),
+    ));
+  }
+}
+
+.btn[type="submit"]{
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+  }
+}
+
+.btn-transparent:not(:disabled):not(.disabled):active, 
+.btn-transparent:not(:disabled):not(.disabled).active, 
+.show > .btn-transparent.dropdown-toggle {
+  background-color: transparent;
+  border: 0;
+}
+
+.btn-transparent:not(:disabled):not(.disabled):active:focus, 
+.btn-transparent:not(:disabled):not(.disabled).active:focus, 
+.show > .btn-transparent.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, 
+.btn-primary:not(:disabled):not(.disabled).active, 
+.show > .btn-primary.dropdown-toggle {
+  background-color: $primary-700;
+  border-color: $primary-700;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, 
+.btn-primary:not(:disabled):not(.disabled).active:focus, 
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: $primary-focus-shadow;
+}
+
+.btn-light:not(:disabled):not(.disabled):active, 
+.btn-light:not(:disabled):not(.disabled).active, 
+.show > .btn-light.dropdown-toggle {
+  color: $primary-700;
+  background-color: transparent;
+  border: 0;
+}
+
+.btn-light:not(:disabled):not(.disabled):active:focus, 
+.btn-light:not(:disabled):not(.disabled).active:focus, 
+.show > .btn-light.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.am-dropdown-button.btn-group {
+  .btn.am-dropdown-toggle {
+    padding: 0 10px;
+    border-radius: $round-lg;
+  }
+}
+
+.danger-btn:not(:disabled):not(.disabled):active, 
+.danger-btn:not(:disabled):not(.disabled).active, 
+.show > .danger-btn.dropdown-toggle {
+  color: $white;
+  border-color: $error-700;
+  background-color: $error-700;
+  box-shadow: none;
+}

@@ -1,0 +1,31 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "com.animalmanager.alpaca.dev",
+                "paths": ["*"]
+            },
+            {
+                "appID": "com.animalmanager.llama.dev",
+                "paths": ["*"]
+            },
+            {
+                "appID": "com.animalmanager.sheep.dev",
+                "paths": ["*"]
+            },
+            {
+                "appID": "com.animalmanager.alpaca",
+                "paths": ["*"]
+            }, 
+            {
+                "appID": "com.animalmanager.llama",
+                "paths": ["*"]
+            },
+            {
+                "appID": "com.animalmanager.sheep",
+                "paths": ["*"]
+            }
+        ]
+    }
+}

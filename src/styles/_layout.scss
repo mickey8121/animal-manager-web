@@ -1,0 +1,173 @@
+body {
+  background: $wild-sand;
+  color: $neutral-900;
+}
+
+.layout {
+  position: relative;
+  display: flex;
+  flex: 1;
+  height: 100%;
+  
+  @include default-font-size;
+
+  .layout-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+
+    @include flexible-values((
+      prop: padding,
+      directions: (top bottom left right),
+      values: (28px, 28px, 28px, 0),
+      values-lg: (20px, 20px, 20px, 0),
+      values-sm: (12px, 0, 0, 0),
+    ));
+
+    &.sidebar-hidden {
+      padding-left: 0;
+    }
+
+    .page {
+      flex: 1 1 auto;
+      min-height: 100%;
+      width: 100%;
+      position: relative;
+
+      .link {
+        &:hover {
+          color: $primary;
+        }
+      }
+
+      .header {
+        min-width: 0;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99;
+
+        @include flexible-value((
+          prop: gap,
+          value: 40px,
+          value-xs: 18px,
+        ));
+
+        @include flexible-values((
+          prop: padding,
+          directions: (top bottom right left),
+          values: (0, 40px, 28px, 28px),
+          values-lg: (0, 25px, 20px, 20px),
+          values-sm: (0, 32px, 12px, 12px),
+        ));
+
+        &.center {
+          .header-left-container {
+            justify-content: center;
+            text-align: center;
+          }
+        }
+
+        .heading {
+          margin: 0;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-family: $secondary-font, $font-family-base ;
+          font-size: 28px;
+          line-height: 34px;
+
+          @include media-breakpoint-up(sm) {
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 50px;
+          }
+        
+          @include media-breakpoint-up(xl) {
+            font-size: 44px;
+            line-height: 66px;
+            font-weight: 600;
+          }
+        }
+
+        .sub-heading {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+          text-align: center;
+          color: $neutral-500;
+        }
+
+        .header-left-container {
+          display: grid;
+          min-width: 0;
+          overflow: hidden;
+          flex: 1 1;
+        }
+
+        .header-right-container {
+          position: relative;
+          display: flex;
+          justify-content: flex-end;
+          flex: 0 1 auto;
+
+          @include flexible-value((
+            prop: gap,
+            value: 40px,
+            value-md: 18px,
+          ));
+        }
+      }
+
+      .bottom-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 9;
+
+        @include flexible-values((  
+          prop: padding,
+          directions: (top bottom left right),
+          values: (26px 20px 28px 28px),
+          values-lg: (26px 20px 20px 20px),
+          values-sm: (26px 20px 12px 12px),
+        ));
+
+        .left-content,
+        .right-content {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          >*:not(:first-child) {
+            margin-left: 6px;
+          }
+        }
+      }
+
+      .page-body {
+        border-radius: $round-md;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1;
+
+        &:not(.with-tabs) {
+          @include flexible-values((
+            prop: padding,
+            directions: (left right top bottom),
+            values: (28px, 28px, 28px, 28px),
+            values-lg: (20px, 20px, 20px, 20px),
+            values-sm: (12px, 12px, 12px, 39px),
+          ));
+        }
+      }
+    }
+  }
+}

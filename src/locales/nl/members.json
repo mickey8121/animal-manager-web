@@ -1,0 +1,14 @@
+{
+  "addNewMembers": "\"Nieuwe leden toevoegen\"",
+  "invite": "Uitnodigen",
+  "herdMembers": "Kuddeleden",
+  "inviteNewMembers": "Nodig nieuwe leden uit",
+  "members": "leden",
+  "member": "Lid",
+  "action": {
+    "invite": "{{entity}} is uitgenodigd",
+    "delete": "{{entity}} is verwijderd",
+    "processing": "Verwerking"
+  },
+  "sameMembers": "Dezelfde e-mails zijn opgegeven"
+}

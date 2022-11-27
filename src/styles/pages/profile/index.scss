@@ -1,0 +1,189 @@
+.profile {
+  .profile-avatar {
+    margin-right: 24px;
+    width: 76px !important;
+    height: 76px !important;
+    border-radius: $round-md;
+    object-fit: cover;
+
+    @include media-breakpoint-down(xs) {
+      width: 63px !important;
+      height: 63px !important;
+    }
+  }
+
+  .profile-greeting {
+    margin-bottom: 3px;
+
+    .profile-greeting-span {
+      color: $primary;
+    }
+
+    @include profile-name-font;
+  }
+
+  .profile-info {
+    padding: 0 28px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include flexible-value((
+      prop: margin-top,
+      value: 20px,
+      value-xs: 0,
+    ));
+
+    @include flexible-values((
+      prop: padding,
+      directions: (right left top bottom),
+      values: (24px, 24px, 0, 0),
+      values-sm: (12px, 12px, 0, 0),
+    ));
+
+    .profile-info-text {
+      flex: 1 0 65%;
+
+      @include media-breakpoint-down(sm) {
+        flex: 1 0 40%;
+      }
+    }
+
+    .profile-email {
+      @include flexible-default-font-size;
+    }
+  }
+
+  .profile-group-list {
+    margin: 24px 0 0 0;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    @include flexible-value((
+      prop: margin-bottom,
+      value: 60px,
+      value-lg: 40px,
+      value-sm: 30px,
+    ));
+
+    @include flexible-values((
+      prop: padding,
+      directions: (right left top bottom),
+      values: (24px, 24px, 0, 0),
+      values-sm: (12px, 12px, 0, 0),
+    ));
+
+    .profile-group-list-item {
+      padding: 4px 12px;
+      background-color: $white;
+      border-radius: $round-md;
+      white-space: nowrap;
+
+      @include label-font-size;
+    }
+  }
+
+  .profile-aside {
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include media-breakpoint-down(md) {
+      flex: 0;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .logout-btn {
+    min-width: 105px;
+    min-height: 50px;
+    letter-spacing: 0;
+    text-align: center;
+    border-radius: 5px;
+
+    @include poppins-m-font;
+  }
+
+  .profile-container {
+    flex: 1;
+  }
+
+  .form {
+    max-width: 900px;
+    margin-bottom: 28px;
+
+    .form-heading {
+      margin-top: 12px;
+      display: block;
+
+      @include flexible-value((
+        prop: margin-bottom,
+        value: 26px,
+        value-lg: 28px,
+        value-sm: 32px,
+      ));
+    }
+
+    &.change-form {
+      .form-group {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.layout {
+  .layout-content {
+    .profile {
+      .page-body {
+        flex: 1 1 70% !important;
+        background-color: $white;
+        display: grid; 
+        grid-template-columns: 1fr 269px; 
+        grid-template-rows: repeat(3, min-content);
+        gap: 0px 32px; 
+
+        .personal-form {
+          grid-area: 1 / 1 / 2 / 2;
+        }
+
+        .breeder-form {
+          grid-area: 2 / 1 / 3 / 2;
+        }
+
+        .change-form {
+          grid-area: 3 / 1 / 4 / 2;
+        }
+
+        .profile-aside {
+          grid-area: 1 / 2 / 4 / 3;
+        }
+
+        @include media-breakpoint-down(md) {
+          grid-template-columns: 1fr; 
+          grid-template-rows: repeat(4, min-content);
+          gap: 48px 0;
+
+          .personal-form {
+            grid-area: 1 / 1 / 2 / 2;
+          }
+  
+          .breeder-form {
+            grid-area: 3 / 1 / 4 / 2; 
+          }
+  
+          .change-form {
+            grid-area: 4 / 1 / 5 / 2; 
+          }
+  
+          .profile-aside {
+            grid-area: 2 / 1 / 3 / 2;
+          }
+        }
+      }
+    }
+  }
+}

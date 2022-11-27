@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="22px" viewBox="0 0 28 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons8-закрытый-почтовый-ящик,-флаг-опущен (1)</title>
+    <defs>
+        <linearGradient x1="36.2415289%" y1="5.96969697%" x2="62.5192975%" y2="108.924242%" id="linearGradient-1">
+            <stop stop-color="#32BDEF" offset="0%"></stop>
+            <stop stop-color="#1EA2E4" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="User-Profile" transform="translate(-353.000000, -376.000000)" fill-rule="nonzero">
+            <g id="icons8-закрытый-почтовый-ящик,-флаг-опущен-(1)" transform="translate(353.000000, 376.000000)">
+                <path d="M7,0 L20.3333333,0 C24.0153333,0 27,2.98466667 27,6.66666667 L27,20.6666667 C27,21.4033333 26.4033333,22 25.6666667,22 L7,22 L7,0 Z" id="Path" fill="#007AD9"></path>
+                <path d="M7,0 C3.1339,0 0,2.98466667 0,6.66666667 L0,20.6666667 C0,21.4033333 0.6265,22 1.4,22 L12.6,22 C13.3735,22 14,21.4033333 14,20.6666667 L14,6.66666667 C14,2.98466667 10.8661,0 7,0 Z" id="Path" fill="url(#linearGradient-1)"></path>
+                <path d="M8.33333333,9 L3.66666667,9 C3.29866667,9 3,8.552 3,8 L3,8 C3,7.448 3.29866667,7 3.66666667,7 L8.33333333,7 C8.70133333,7 9,7.448 9,8 L9,8 C9,8.552 8.70133333,9 8.33333333,9 Z" id="Path" fill="#007AD9"></path>
+                <rect id="Rectangle" fill="#CF1928" x="17" y="5" width="10" height="2"></rect>
+                <path d="M25,8.33333333 L25,5 L27.25,5 C27.664,5 28,5.29866667 28,5.66666667 L28,8.33333333 C28,8.70133333 27.664,9 27.25,9 L25.75,9 C25.336,9 25,8.70133333 25,8.33333333 Z" id="Path" fill="#CF1928"></path>
+                <circle id="Oval" fill="#D9414F" cx="17.5" cy="6.5" r="1.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

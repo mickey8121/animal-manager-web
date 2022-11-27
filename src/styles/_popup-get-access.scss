@@ -1,0 +1,64 @@
+.popup-access {
+  position: relative;
+  padding: 20px 30px;
+  min-height: 362px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: $white-lilac;
+  border-radius: 20px;
+  background-image: url('/images/person.svg');
+  background-repeat: no-repeat;
+  background-position: bottom 0 left 30px;
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+
+  .popup-access-container {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  .popup-access-title {
+    margin: 0;
+    color: $martinique;
+
+    @include flexible-value((
+      prop: font-size,
+      value: 26px,
+      value-lg: 24px,
+      value-sm: 22px,
+    ));
+
+    @include flexible-value((
+      prop: line-height,
+      value: 28px,
+      value-lg: 26px,
+      value-sm: 24px,
+    ));
+
+  }
+
+  .popup-access-text {
+    margin: 0;
+    color: $pale-sky;
+    line-height: 18px;
+  }
+
+  .btn-arrow {
+    margin-top: 72px;
+    padding: 0;
+    width: 55px;
+    height: 58px;
+    background-color: $primary;
+    border: 1px solid $primary;
+    color: $martinique;
+
+    &:focus {
+      box-shadow: 0 0 0 4px $primary-opacity;
+    }
+  }
+}

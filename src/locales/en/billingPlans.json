@@ -1,0 +1,69 @@
+{
+  "thisIsAlreadyUrCurrentPlan": "This is already your current plan",
+
+  "accountPageHeader": {
+    "text": "Account",
+    "subText": "Enjoy premium features with a monthly subscription plan."
+  },
+
+  "names": {
+    "alpacaOwner": "{{ appName }} Owner",
+    "alpacaBreeder": "{{ appName }} Breeder",
+    "alpacaAssociations": "{{ appName }} Associations",
+    "developer": "Developer"
+  },
+
+  "descriptions": {
+    "alpacaOwner": "For every {{ appNameLowerCase }} owner looking to improve the health of their {{ herd }}.",
+    "alpacaBreeder": "For the serious {{ appNameLowerCase }} breeder looking for extra features.",
+    "alpacaAssociations": "For new and existing associations looking to offer member benefits.",
+    "developer": "For new and existing associations looking to offer member benefits."
+  },
+
+  "advantages": {
+    "alpacaOwner": [
+      "Unlimited {{ appNameLowerCase }} records",
+      "Unlimited {{ herds }} and groups",
+      "Full {{ appNameLowerCase }} registry profile",
+      "Share records with other users",
+      "Medication with reminders",
+      "Shearing and fleece records",
+      "Search {{ appNameLowerCase }} for sale globally",
+      "Free mobile applications",
+      "Upload images"
+    ],
+    "alpacaBreeder": [
+      "Includes $t(billingPlans.names.alpacaOwner) features",
+      "List {{ appNameLowerCase }} for sale",
+      "Marketing tools for {{ appNameLowerCase }} sellers",
+      "No minimumterm contract"
+    ],
+    "alpacaAssociations": [
+      "Includes $t(billingPlans.names.alpacaBreeder) features",
+      "Show management",
+      "Membership management",
+      "Payment processing",
+      "Marketing tools",
+      "Membership directory",
+      "Registration of new {{ appNameLowerCase }}",
+      "Self-service administration",
+      "Registered transfer of ownership"
+    ],
+    "developer": [
+      "Extend existing applications",
+      "Integrate with farm equipment",
+      "Perform offline analytics",
+      "Add new features and tools",
+      "Market to other users online",
+      "Developer support options",
+      "Self-service administration"
+    ]
+  },
+
+  "prices": {
+    "perMemberSubscription": "Per member subscription",
+    "letsHaveAChat": "Let’s have a chat",
+    "freeForEveryone": "Free for everyone",
+    "perMonth": "{{ context }}/month"
+  }
+}

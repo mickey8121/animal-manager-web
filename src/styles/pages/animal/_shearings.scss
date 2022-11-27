@@ -1,0 +1,43 @@
+// .shearings-page {
+//   .shearings-page-header {
+//     display: flex;
+//     justify-content: flex-end;
+//     flex-wrap: wrap;
+//     padding: 0 5px;
+
+//     @include flexible-value((
+//       prop: padding-bottom,
+//       value: 30px,
+//       value-md: 20px
+//     ));
+
+//     .rows-per-page {
+//       margin-right: auto;
+//     }
+//   }
+
+//   .shearings-list {
+//     display: flex;
+//   }
+// }
+
+.shearing-modal {
+  max-width: 811px;
+  
+  .modal-content {
+    max-width: 811px;
+
+    @include flexible-value((
+      prop: margin,
+      value: 8px,
+      value-xs: 0,
+    ));
+  }
+
+  .modal-body {
+    .btn-primary {
+      margin-left: auto;
+      width: 151px;
+    }
+  }
+}

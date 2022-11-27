@@ -1,0 +1,10 @@
+{
+  "myNotes": "My Notes",
+  "notes": "Notes",
+  "note": "Note",
+  "noteDelete": "Note Delete",
+  "deleteNoteConfirm": "The note will be removed permanently",
+  "notePlaceholder": "Write a note here...",
+  "addNote": "Add note",
+  "emptyNote": "Note cannot be empty!"
+}

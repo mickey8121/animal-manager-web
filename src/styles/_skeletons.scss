@@ -1,0 +1,63 @@
+.input-skeleton {
+  width: 100%;
+  margin: 1px;
+  border-radius: $round-lg;
+  
+  @include flexible-value((
+    prop: height,
+    value: 48px,
+    value-xs: 44px,
+  ));
+  
+  @include flexible-value((
+    prop: margin-bottom,
+    value: 31px,
+    value-lg: 29px,
+    value-xs: 27px,
+  ));
+
+  rect {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.heading-skeleton {
+  width: 100%;
+  border-radius: $round-lg;
+
+  @include flexible-value((
+    prop: height,
+    value: 66px,
+    value-lg: 34px,
+    value-sm: 50px,
+  ));
+
+  rect {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.note-form-skeleton {
+  width: 100%;
+  border-radius: $round-lg;
+
+  @include flexible-value((
+    prop: margin-bottom,
+    value: 32px,
+    value-sm: 20px,
+  ));
+
+  @include flexible-value((
+    prop: height,
+    value: 216px,
+    value-sm: 192px,
+  ));
+
+  rect {
+    height: 100%;
+    width: 100%;
+  }
+
+}

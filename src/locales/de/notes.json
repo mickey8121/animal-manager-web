@@ -1,0 +1,11 @@
+{
+  "myNotes": "Meine Notizen",
+  "notes": "Anmerkungen",
+  "note": "Die Notiz",
+
+  "noteDelete": "Notiz löschen",
+  "deleteNoteConfirm": "Die Notiz wird dauerhaft entfernt",
+  "notePlaceholder": "Hier eine Notiz schreiben...",
+  "addNote": "Notiz hinzufügen",
+  "emptyNote": "Hinweis darf nicht leer sein!"
+}

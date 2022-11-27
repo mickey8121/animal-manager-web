@@ -1,0 +1,88 @@
+.note-form {
+  .form-group {
+    z-index: auto;
+
+    @include flexible-value((
+      prop: margin-bottom,
+      value: 32px,
+      value-sm: 20px,
+    ));
+  }
+
+  .row {
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0;
+    background-color: $white;
+    border-radius: $round-lg;
+
+
+    @include flexible-value((
+      prop: padding,
+      value:(36px 44px),
+      value-sm: 24px
+    ));
+
+    .note-form-group {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      @import "note-datepicker";
+
+      .note-animal-name{
+        width: 70px;
+        flex: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        @include flexible-value((
+          prop: margin-left,
+          value: 30px,
+          value-sm: 24px
+        ));
+
+        @include poppins-m-font;
+      }
+
+      .dropdown-note-actions {
+        margin-left: auto;
+
+        .btn {
+          min-height: fit-content;
+          font-size: 30px;
+          padding: 0;
+          border: 0;
+          border-radius: $round-sm;
+
+          svg {
+            path {
+              stroke: $neutral-900;
+            }
+          }
+        }
+      }
+    }
+
+    @import 'note-textarea';
+
+    .submit-button {
+      align-self: flex-end;
+      height: 52px;
+      margin-top: 15px;
+
+      @include flexible-value((
+        prop: width,
+        value:183px,
+        value-sm: 100%,
+      ));
+    }
+  }
+}
+
+.tab-content-footer {
+  .pagination-controls {
+    justify-content: end;
+  }
+}

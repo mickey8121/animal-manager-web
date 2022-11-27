@@ -1,0 +1,54 @@
+.my-sub {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 24px;
+  background: $wild-sand;
+  border-radius: 20px;
+
+  @include flexible-value((
+    prop: margin-top,
+    value: 70px,
+    value-md: 0,
+  ));
+
+  .my-sub-text {
+    margin: 0 0 15px;
+    line-height: 16px;
+    color: $martinique;
+
+    @include poppins-l-font;
+  }
+
+  .my-sub-cancel {
+    margin: 18px 0 4px;
+    line-height: 14x;
+
+    @include flexible-value((
+      prop: font-size,
+      value: 12px,
+      value-lg: 11px,
+      value-sm: 10px,
+    ));
+  }
+
+  .my-sub-span {
+    margin-bottom: 4px;
+    display: block;
+    color: $neutral-500;
+
+    @include inter-m-font;
+  }
+
+  .btn-cancel-sub {
+    padding: 12px 20px;
+    height: 48px;
+    width: 100%;
+    min-height: min-content;
+    align-self: flex-end;
+    border-radius: $round-md;
+    box-sizing: border-box;
+    @include poppins-m-font;
+  }
+}

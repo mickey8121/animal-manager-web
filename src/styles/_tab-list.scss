@@ -1,0 +1,140 @@
+.tab-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  .nav-tabs {
+    flex-wrap: nowrap;
+    height: 38px;
+    border: none;
+    overflow: auto hidden;
+    
+    @include flexible-value((
+      prop: margin-left,
+      value: (28px),
+      value-lg: (20px),
+      value-sm: (12px),
+    ));
+
+    @include flexible-value((
+      prop: margin-bottom,
+      value: (-2px),
+      value-sm: (-4px),
+    ));
+
+    .nav-item {
+      cursor: default;
+    }
+  }
+
+  &.tab-list--multi {
+    .nav-tabs .nav-item {
+      padding: 0 8px;
+      position: relative;
+
+      .nav-link {
+        display: block;
+        position: relative;
+        border-top-left-radius: $round-md;
+        border-top-right-radius: $round-md;
+        border: none;
+        transition: border-color .2s ease, background .2s ease;
+
+        &::before, &::after {
+          content: '';
+          position: absolute;
+          bottom: 2px;
+          width: calc(#{$round-md} * 2);
+          height: calc(#{$round-md} * 2);
+          box-shadow: 0 $round-md 0 0 transparent;
+          transition: box-shadow .2s ease;
+        }
+
+        &::before {
+          left: calc(#{$round-md} * 2 * -1);
+          border-bottom-right-radius: 50%;
+        }
+
+        &::after {
+          right: calc(#{$round-md} * 2 * -1);
+          border-bottom-left-radius: 50%;
+        }
+
+        &.active, &:hover, &:focus {
+          background-color: $white;
+        }
+
+        &.active {
+          &::before, &::after {
+            box-shadow: 0 $round-md 0 0 $white;
+          }
+
+          &:hover {
+            cursor: default;
+          }
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 34px;
+    background: $white;
+    box-shadow: $box-shadow;
+   
+
+    @include flexible-value((
+      prop: border-bottom-left-radius,
+      value: $round-md,
+      value-sm: 0,
+    ));
+
+    @include flexible-value((
+      prop: border-top-left-radius,
+      value: $round-md,
+      value-sm: 0,
+    ));
+
+    @include media-breakpoint-down(xs) {
+      .tab-content-heading {
+        display: none;
+      }
+    }
+
+    .tab-content-header, .tab-content-body, .tab-content-footer {
+      @include flexible-values((
+        prop: padding,
+        directions: (left right),
+        values: (28px 28px),
+        values-lg: (20px 20px),
+        values-sm: (12px 12px),
+      ));
+    }
+
+    .tab-content-header {
+      display: flex;
+      margin-bottom: 10px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .tab-content-heading {
+        margin: 0;
+
+        @include main-title-font;
+      }
+    }
+
+    .tab-content-body {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    .tab-content-footer {
+      padding-bottom: 16px;
+    }
+  }
+}

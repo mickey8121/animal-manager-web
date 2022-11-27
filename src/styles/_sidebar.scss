@@ -1,0 +1,334 @@
+.sidebar {
+  flex-shrink: 0;
+  z-index: 100;
+  box-sizing: border-box;
+  transition: width .2s ease, height .2s ease;
+  position: relative;
+  display: flex;
+  border-radius: $round-md;
+  flex-direction: column;
+
+  @include flexible-values((
+    prop: margin,
+    directions: (top bottom right left),
+    values: (28px, 28px, 0, 28px),
+    values-lg: (20px, 20px, 0, 20px),
+    values-sm: (12px, 12px, 0, 12px),
+  ));
+
+  @include flexible-value((
+    prop: width,
+    value: 315px,
+    value-lg: 262px,
+  ));
+
+  .heading {
+    font-family: $secondary-font, $font-family-base;
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 500;
+  }
+
+  .sidebar-container {
+    position: fixed;
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    border-radius: $round-md;
+    box-shadow: $box-shadow;
+    background: $white;
+    transition: inherit;
+
+    @include flexible-value((
+      prop: width,
+      value: 315px,
+      value-lg: 262px,
+      value-sm: 300px,
+      value-xs: 100vw,
+    ));
+
+    @include flexible-value((
+      prop: height,
+      value: calc(100vh - 56px),
+      value-lg: calc(100vh - 40px),
+      value-sm: calc(100vh - 24px),
+    ));
+  }
+
+  .sidebar-block {
+    width: 100%;
+    font-weight: normal;
+
+    @include inter-m-font;
+
+    @include flexible-value((
+      prop: padding,
+      value: 25px,
+      value-lg: 15px,
+      value-sm: 10px,
+    ));
+
+    &.header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include flexible-value((
+        prop: margin-top,
+        value: 10px,
+        value-lg: 20px,
+        value-sm: 6px,
+      ));
+    }
+
+    &.body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+
+      @include flexible-value((
+        prop: padding-top,
+        value: 20px,
+        value-lg: 15px,
+        value-sm: 10px,
+      ));
+    }
+
+    &.footer {
+      display: flex;
+      padding: 0;
+      align-items: center;
+      height: 92px;
+      border-bottom-right-radius: $round-md;
+      border-bottom-left-radius: $round-md;
+      font-family: $secondary-font;
+
+      @include default-font-size;
+
+      @include media-breakpoint-down(sm) {
+        height: 76px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      .avatar {
+        width: 52px !important;
+        height: 52px !important;
+      }
+    }
+
+    .sidebar-links {
+      display: flex;
+      flex-direction: column;
+
+      .collapsible-links {
+        &:not(.active) {
+          .collapse-header {
+            background: none;
+
+            &:hover,
+            &:focus {
+              background: $neutral-500-glass;
+            }
+          }
+        }
+
+        .collapse-content {
+          position: relative;
+          align-items: flex-end;
+          margin: 24px 0;
+
+          &::after {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            background: $neutral-200;
+          }
+
+          .sidebar-link {
+            margin-left: 54px;
+          }
+        }
+      }
+    }
+
+    .sidebar-link {
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      border-radius: $round-lg;
+      color: $neutral-900;
+      transition: $transition-base;
+
+      @include text-truncate;
+
+      &:focus,
+      &:hover {
+        color: $neutral-900;
+        background: $neutral-500-glass;
+      }
+
+      .sidebar-link-icon {
+        margin-right: 8px;
+        height: 20px;
+        width: 20px;
+        border-radius: 0;
+        transition: $transition-base;
+      }
+
+      .sidebar-link-span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      &.active {
+        background: $primary;
+
+        .sidebar-link-icon.fallback {
+          background: $pale-gray;
+        }
+      }
+
+      &.herd {
+        padding: 10px;
+
+        .sidebar-link-icon {
+          margin-right: 8px;
+          height: 40px;
+          width: 40px;
+          border-radius: $round-md;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .sidebar-link+.sidebar-link {
+      margin-top: 20px;
+    }
+  }
+
+  .sidebar-user {
+    display: flex;
+    padding: 21px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    border-bottom-right-radius: $round-md;
+    border-bottom-left-radius: $round-md;
+    transition: $transition-base;
+
+    @include media-breakpoint-down(sm) {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    @include hover {
+      background: $neutral-150;
+    }
+
+    &:not(.active) {
+      box-shadow: 0px -1px 0px 0px $neutral-150;
+    }
+
+    &.active {
+      background-color: $primary-200;
+    }
+
+    .user-info {
+      margin-left: 0.8rem;
+      width: 70px;
+      flex: 1;
+
+      .user-name {
+        margin: 0;
+        color: $neutral-900;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .user-email {
+        margin: 0;
+        color: $dusty-gray;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .user-chevron {
+      margin: 12px;
+      margin-left: 24px;
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .sidebar {
+    margin: 0;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s ease, visibility .3s ease;
+
+    .sidebar-container {
+      visibility: hidden;
+      position: relative;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      border-radius: 0;
+      opacity: 0;
+      transition: opacity .3s ease, visibility .3s ease;
+
+      &::after {
+        position: absolute;
+        visibility: hidden;
+        content: '';
+        height: 100vh;
+        width: 100vw;
+        background-color: $black;
+        z-index: -1;
+        top: 0;
+        opacity: 0;
+        cursor: pointer;
+        transition: opacity .3s ease, visibility .3s ease;
+
+        @include flexible-value((
+          prop: left,
+          value: 324px,
+          value-lg: 262px,
+          value-sm: 300px,
+          value-xs: -300px,
+        ));
+      }
+    }
+
+    &.active {
+      visibility: visible;
+      opacity: 1;
+
+      .sidebar-container {
+        visibility: visible;
+        opacity: 1;
+
+        &::after {
+          visibility: visible;
+          opacity: .2;
+
+          @include media-breakpoint-down(xs) {
+            visibility: hidden;
+          }
+        }
+      }
+    }
+  }
+}

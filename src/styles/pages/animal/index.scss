@@ -1,0 +1,218 @@
+@import 'shearings';
+@import 'notes-tab';
+@import 'coloration-pin';
+@import 'weight-change-pin';
+
+.page.animal .page-body {
+  .animal-container {
+    display: flex;
+    margin-bottom: 8px;
+
+    @include flexible-value((
+      prop: gap,
+      value: 40px,
+      value-xs: 18px,
+    ));
+
+    .animal-name {
+      @include profile-name-font;
+    }
+  }
+
+  .animal-profile {
+    @include flexible-values((
+      prop: padding,
+      directions: (left bottom),
+      values: (28px, 52px),
+      values-lg: (20px, 40px),
+      values-sm: (12px, 40px),
+    ));
+
+    .animal-avatar {
+      width: 120px !important;
+      height: 120px !important;
+      border-radius: $round-md;
+  
+      @include media-breakpoint-down(xs) {
+        width: 63px !important;
+        height: 63px !important;
+      }
+
+      img {
+        width: 120px !important;
+        height: 120px !important;
+        border-radius: $round-md;
+  
+        @include media-breakpoint-down(xs) {
+          width: 63px !important;
+          height: 63px !important;
+        }
+      }
+    }
+
+   .animal-details {
+      display: flex;
+      flex-wrap: wrap;
+
+      .animal-info-span {
+        margin: 0 11px 0 0;
+        color: $neutral-500;
+      }
+
+      .animal-medication {
+        display: flex;
+
+        @include flexible-default-font-size;
+      }
+
+      .animal-reminders {
+        list-style: none;
+        margin: 0 28px 0 0;
+        padding: 0;
+
+        .animal-reminder:not(:last-child) {
+          margin-bottom: 8px;
+        }
+      }
+
+      .animal-info-text {
+        margin: 0;
+      }
+
+
+      .animal-details-list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        list-style: none;
+
+        @include flexible-value((
+          prop: max-height,
+          value: 120px,
+          value-lg: auto,
+        ));
+
+        .animal-details-list-item {
+          margin-right: 58px;
+          display: flex;
+
+          @include flexible-default-font-size;
+
+          &.reminders {
+            @include media-breakpoint-down(xs) {
+              margin: 0 0 0 -81px;
+            }
+          }
+        }
+
+        .animal-details-list-item:not(:last-child) {
+          margin: 0 58px 16px 0;
+
+
+          @include media-breakpoint-down(xs) {
+            margin: 0 10px 16px 0;
+          }
+        }
+
+        .animal-info-status {
+          margin-right: 8px;
+          display: inline-block;
+          background-color: $neutral-500;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          
+
+          &.active {
+            background-color: $positive-500;
+          }
+        }
+      }
+    }
+  }
+
+  .weight-tab {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+
+    .empty-tab {
+      width: 100%;
+      flex: 1 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .empty-tab-title {
+        margin-bottom: 20px;
+      }
+    }
+
+    .weight-header {
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .weight-chart {
+      margin: auto;
+      width: 99%;
+      max-width: 900px;
+
+      .weight-wrapper {
+        border: 0;
+        margin: auto;
+      }
+    }
+
+    .weight-pagination {
+      display: flex;
+      align-items: center;
+
+      .form-group {
+        margin: 0 0 0 15px;
+
+        .react-custom-select__value-container {
+          padding-right: 34px;
+        }
+
+        .react-custom-select__indicator {
+          padding: 1px;
+        }
+      }
+    }
+
+    .weight-history {
+      margin-top: 50px;
+      
+    }
+
+    .weight-loading {
+      opacity: .4;
+    }
+
+    .weight-wrapper {
+      position: relative;
+      border: 1px solid $bone-gray;
+      border-radius: 5px;
+      overflow: hidden;
+
+      .loading {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        .loader {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}

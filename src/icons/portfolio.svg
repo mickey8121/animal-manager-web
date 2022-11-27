@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="25px" viewBox="0 0 28 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons8-портфель</title>
+    <defs>
+        <linearGradient x1="50%" y1="99.3%" x2="50%" y2="10.2666667%" id="linearGradient-1">
+            <stop stop-color="#B33F20" offset="0%"></stop>
+            <stop stop-color="#C74724" offset="12.9%"></stop>
+            <stop stop-color="#D94F29" offset="29.5%"></stop>
+            <stop stop-color="#E4532B" offset="46.9%"></stop>
+            <stop stop-color="#E8552C" offset="65.9%"></stop>
+        </linearGradient>
+        <radialGradient cx="49.58%" cy="-9.40011%" fx="49.58%" fy="-9.40011%" r="139.208696%" gradientTransform="translate(0.495800,-0.094001),scale(0.821429,1.000000),translate(-0.495800,0.094001)" id="radialGradient-2">
+            <stop stop-color="#40150B" offset="0%"></stop>
+            <stop stop-color="#622110" offset="15.6%"></stop>
+            <stop stop-color="#953218" offset="41.7%"></stop>
+            <stop stop-color="#BA3F1E" offset="64.5%"></stop>
+            <stop stop-color="#D14722" offset="82.8%"></stop>
+            <stop stop-color="#D94A23" offset="94.4%"></stop>
+        </radialGradient>
+        <linearGradient x1="50%" y1="0.147368421%" x2="50%" y2="94.3526316%" id="linearGradient-3">
+            <stop stop-color="#FC7D5B" offset="0%"></stop>
+            <stop stop-color="#F8734F" offset="6%"></stop>
+            <stop stop-color="#F3653D" offset="18%"></stop>
+            <stop stop-color="#F05B31" offset="32.6%"></stop>
+            <stop stop-color="#EE552A" offset="52.3%"></stop>
+            <stop stop-color="#ED5328" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="User-Profile" transform="translate(-353.000000, -420.000000)" fill-rule="nonzero">
+            <g id="icons8-портфель" transform="translate(353.000000, 420.000000)">
+                <path d="M17,0 L11,0 C10.448,0 10,0.448 10,1 L10,2 L18,2 L18,1 C18,0.448 17.552,0 17,0 Z" id="Path" fill="url(#linearGradient-1)"></path>
+                <path d="M26.6,25 L1.4,25 C0.63,25 0,24.353125 0,23.5625 L0,4.875 C0,3.29375 1.26,2 2.8,2 L25.2,2 C26.74,2 28,3.29375 28,4.875 L28,23.5625 C28,24.353125 27.37,25 26.6,25 Z" id="Path" fill="url(#radialGradient-2)"></path>
+                <path d="M26.8079,13.9773684 L14,16 L1.1921,13.9773684 C0.5068,13.8697895 0,13.2501053 0,12.5206316 L0,4.94736842 C0,3.32631579 1.26,2 2.8,2 L25.2,2 C26.74,2 28,3.32631579 28,4.94736842 L28,12.5206316 C28,13.2501053 27.4932,13.8697895 26.8079,13.9773684 Z" id="Path" fill="url(#linearGradient-3)"></path>
+                <path d="M15.625,11 L13.375,11 C13.168,11 13,11.168 13,11.375 L13,13.625 C13,13.832 13.168,14 13.375,14 L15.625,14 C15.832,14 16,13.832 16,13.625 L16,11.375 C16,11.168 15.832,11 15.625,11 Z" id="Path" fill="#F6ECA5"></path>
+            </g>
+        </g>
+    </g>
+</svg>

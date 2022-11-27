@@ -1,0 +1,322 @@
+// to override styles correctly, it is necessary to wrap .react-custom-select in the body
+body {
+  @import 'input';
+
+  .editor-form-group {
+    z-index: 3;
+  }
+
+  .form-control {
+    border-radius: $round-md;
+  }
+
+  .react-custom-select__control {
+    border-radius: $round-md;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $primary;
+    }
+
+    &:focus {
+      border-color: $primary;
+    }
+
+    &.react-custom-select__control--is-focused {
+      border: 1px solid $primary;
+      box-shadow: $primary-focus-shadow;
+    }
+  }
+
+  .react-custom-select__menu-portal {
+    z-index: 9999;
+
+    .react-custom-select__menu {
+      z-index: 9999;
+    }
+  }
+
+  .react-custom-select__placeholder {
+    color: $silver-gray;
+  }
+
+  .react-custom-select__option {
+    cursor: pointer;
+
+    &:active {
+      background-color: $primary-300;
+    }
+
+    &.react-custom-select__option--is-selected {
+      background-color: $primary-300 !important;
+      color: $neutral-900;
+    }
+
+    &.react-custom-select__option--is-focused {
+      background-color: $primary-200;
+    }
+  }
+
+  .reactstrap-date-picker-input {
+    z-index: 100;
+  }
+
+  .is-invalid {
+    input.reactstrap-date-picker-input {
+      border: 1px solid $error-500;
+
+      &:focus {
+        border: 1px solid $primary;
+        box-shadow: 0 0 0 0.2rem rgba($error-500, 0.4);
+      }
+    }
+  }
+
+  form {
+    .row {
+      margin-right: -12px;
+      margin-left: -12px;
+    }
+  }
+
+  @import 'editor';
+}
+
+.react-custom-select-container {
+  cursor: pointer;
+
+  &.is-invalid {
+    &.active {
+      display: block;
+    }
+  }
+
+  .react-custom-select__control {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 5px;
+      right: 52px;
+      height: 6px;
+      background-color: $white;
+    }
+
+    @include flexible-value((
+      prop: min-height,
+      value: 48px,
+      value-xs: 44px,
+    ));
+  }
+
+  &.is-invalid {
+    .react-custom-select__control {
+      border-color: #EE3A3A;
+      padding-right: calc(1.5em + 0.75rem);
+      background-image: url('/icons/is-invalid.svg');
+      background-repeat: no-repeat;
+      background-position: right calc(0.375em + 0.1875rem) center;
+      background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+    }
+  }
+
+  .react-custom-select__multi-value__label {
+    background-color: $primary-400;
+    border-top-left-radius: $round-md;
+    border-bottom-left-radius: $round-md;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .react-custom-select__multi-value__remove {
+    background-color: $primary-400;
+    border-top-right-radius: $round-md;
+    border-bottom-right-radius: $round-md;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.form-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active
+  {
+    box-shadow: 0 0 0 30px white inset;
+  }
+
+  .was-validated
+  .form-control:invalid,
+  .form-control.password.is-invalid {
+    background-position: right calc(2.375em + 0.1875rem) center;
+
+    &:focus {
+      background-position: right calc(2.375em + 0.0975rem) center;
+    }
+  }
+
+  .active {
+    display: block;
+  }
+
+  .was-validated
+  .form-control:invalid,
+  .form-control.is-invalid,
+  .form-control.is-invalid {
+    &:focus {
+      background-position: right calc(0.22em + 0.2575rem) center;
+    }
+  }
+
+  .btn-secondary:not(:disabled):not(.disabled):active,
+  .btn-secondary:not(:disabled):not(.disabled).active,
+  .show > .btn-secondary.dropdown-toggle {
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  .btn-secondary:not(:disabled):not(.disabled):active:focus,
+  .btn-secondary:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+  }
+
+  .form-control.password {
+    padding-right: 40px;
+  }
+
+  label:not(.rdw-link-modal-label):not(.rdw-link-modal-target-option) {
+    position: absolute;
+    padding: 0 4px;
+    box-sizing: border-box;
+    top: -10px;
+    left: 12px;
+    z-index: 150;
+
+    @include label-font-size;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: 0;
+      bottom: 6px;
+      right: 0;
+      background: $white;
+      z-index: -1;
+    }
+  }
+
+  .rdp-input-group {
+    .rdp-calendar {
+      .u-today-button {
+        background-color: $primary;
+        color: $neutral-900;
+
+        @include poppins-m-font;
+
+        &:hover {
+          background-color: $primary-600;
+          box-shadow: $primary-btn-focus-shadow;
+        }
+      }
+    }
+  }
+
+  @include flexible-value((
+    prop: margin-bottom,
+    value: 31px,
+    value-lg: 29px,
+    value-xs: 27px,
+  ));
+}
+
+.password {
+  .btn {
+    position: absolute;
+    padding: 6px 15px;
+    width: 30px;
+    height: 30px;
+    top: 0px;
+    right: 9px;
+    background-color: transparent;
+    background: url('/icons/Eye-off.svg') center no-repeat;
+    z-index: 4;
+    border: 0;
+
+    &:focus {
+      border: 0;
+    }
+
+    &:active {
+      background-color: transparent;
+      border: 0;
+    }
+  }
+
+  .show-password {
+    background: url('/icons/Eye.svg') center no-repeat;
+  }
+}
+
+.form-control {
+  padding: calc(0.375rem + 1px) calc(0.75rem + 1px);
+  position: relative;
+  z-index: 2;
+height: auto;
+
+  @include flexible-value((
+    prop: min-height,
+    value: 48px,
+    value-xs: 44px,
+  ));
+
+  @include default-font-size;
+
+  &:focus {
+    padding: 0.375rem 0.75rem;
+    border: 2px solid $primary;
+    box-shadow: none;
+  }
+
+  &::placeholder {
+    color: $silver-gray;
+  }
+
+  &.is-invalid:focus {
+    box-shadow: none;
+    border: 2px solid $error-500;
+  }
+}
+
+.is-invalid {
+  &.textarea-note {
+    border: none;
+    resize: none;
+    min-height: 100px;
+    max-height: 200px;
+
+    &:focus {
+      border: 1px solid $neutral-300;;
+      resize: vertical;
+    }
+  }
+}
+
+.modal-content {
+  .form-group {
+    z-index: 1;
+  }
+
+  .date-picker{
+    z-index: 5;
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "accountPageHeader": {
+    "subText": "Profitez de fonctionnalités premium avec un abonnement mensuel.",
+    "text": "Account"
+  },
+  "descriptions": {
+    "alpacaAssociations": "Pour les associations nouvelles et existantes cherchant à offrir des avantages aux membres.",
+    "alpacaBreeder": "Pour l'éleveur d'{{ appNameLowerCase }}s sérieux à la recherche de fonctionnalités supplémentaires.",
+    "alpacaOwner": "Pour chaque propriétaire d'{{ appNameLowerCase }} cherchant à améliorer la santé de son {{ herd }}.",
+    "developer": "Pour les associations nouvelles et existantes cherchant à offrir des avantages aux membres."
+  },
+  "names": {
+    "alpacaAssociations": "Associations d'{{ appNameLowerCase }}s",
+    "alpacaBreeder": "Éleveur d'{{ appNameLowerCase }}s",
+    "alpacaOwner": "Propriétaire d'{{ appNameLowerCase }}a",
+    "developer": "Développeur"
+  },
+  "prices": {
+    "freeForEveryone": "Gratuit pour tous",
+    "letsHaveAChat": "Discutons",
+    "perMemberSubscription": "Abonnement par membre",
+    "perMonth": "{{ context }}/mois"
+  },
+  "advantages": {
+    "alpacaOwner": [
+      "Records d'{{ appNameLowerCase }} illimités",
+      "Groupes et {{ herds }} illimités",
+      "Profil complet du registre d'{{ appNameLowerCase }}",
+      "Partager des enregistrements avec d'autres utilisateurs",
+      "Médicament avec rappels",
+      "Dossiers de tonte et de toison",
+      "Rechercher des {{ appNameLowerCase }}s à vendre dans le monde",
+      "Applications mobiles gratuites",
+      "Importer des images"
+    ],
+    "alpacaBreeder": [
+      "Comprend des fonctionnalités de $t(billingPlans.names.alpacaOwner)",
+      "Liste {{ appNameLowerCase }} à vendre",
+      "Outils de marketing pour les vendeurs d'{{ appNameLowerCase }}s",
+      "Pas de contrat à durée minimale"
+    ],
+    "alpacaAssociations": [
+      "Comprend les fonctionnalités de $t(billingPlans.names.alpacaBreeder)",
+      "Gestion du spectacle",
+      "Gestion des membres",
+      "Traitement des paiements",
+      "Outils marketing",
+      "Annuaire des membres",
+      "Enregistrement du nouvel {{ appNameLowerCase }}",
+      "Administration en libre-service",
+      "Transfert enregistré de propriété"
+    ],
+    "developer": [
+      "Étendre les applications existantes",
+      "Intégration avec l'équipement agricole",
+      "Effectuer des analyses hors ligne",
+      "Ajouter de nouvelles fonctionnalités et outils",
+      "Marché aux autres utilisateurs en ligne",
+      "Options d'assistance aux développeurs",
+      "Administration en libre-service"
+    ]
+  },
+  "thisIsAlreadyUrCurrentPlan": "Ceci est déjà votre plan actuel"
+}

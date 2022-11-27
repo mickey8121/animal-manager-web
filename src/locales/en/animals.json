@@ -1,0 +1,134 @@
+{
+  "alpaca": "Alpaca",
+  "llama": "Llama",
+  "sheep": "Sheep",
+  "animalName": "Animal Name",
+  "animalID": "Animal ID",
+  "sex": "Sex",
+  "status": "Status",
+  "birthday": "Birthday",
+  "deathDate": "Death date",
+  "type": "Type",
+  "damId": "Dam ID",
+  "sireId": "Sire ID",
+  "transferredTo": "Transferred to",
+  "saleDate": "Sale date",
+  "statusNotes": "Status Notes",
+  "coloration": "Coloration",
+  "aanzIar": "AANZ IAR",
+  "aanzHerdName": "Originating herd name",
+  "aanzName": "Originating animal name",
+  "aanzHerdId": "Originating herd ID",
+  "contactDetails": "Contact Details to show",
+  "alpacaDetails": "Alpaca Details",
+  "saleStatus": "For Sale status",
+  "successAnimalDeleted": "{{ animal }} {{ name }} removed",
+  "deleteAnimalConfirm": "The {{ animal }} will be removed permanently",
+  "deleteAnimal": "Remove the {{ animal }}",
+
+  "sale": "Sale",
+  "profile": "Profile",
+
+  "shearing": {
+    "addShearing": "Add shearing",
+    "editShearing": "Edit shearing",
+    "deleteShearing": "Delete shearing",
+    "shearing": "Shearing",
+    "density": "MFD",
+    "micron": "Micron",
+    "deviation": "SD",
+    "variation": "CV",
+    "fibresPercentage": "Fibres Percentage",
+    "curvature": "Curv",
+    "comfortFactor": "Comfort Factor"
+  },
+
+  "age": {
+    "lessMonth": "less than 1 month",
+    "year": "1 year",
+    "years_0": "{{count}} year",
+    "years_1": "{{count}} year",
+    "years_2": "{{count}} year",
+    "month": "1 month",
+    "months_0": "{{count}} months",
+    "months_1": "{{count}} months",
+    "old": "old",
+    "age": "Age"
+  },
+  "form": {
+    "animalNamePlaceholder": "Grumpy",
+    "animalNameRequired": "Animal name is required",
+    "animalNameLength": "Name is too short",
+    "birthdayRequired": "Birthday is required",
+    "weightRequired": "Weight is required",
+    "animalIDPlaceholder": "Enter ID or we'll generate it automatically"
+  },
+  "sexOptions": {
+    "female": "Female",
+    "male": "Male",
+    "nonBreedingFemale": "Non Breeding Female",
+    "unknown": "Unknown",
+    "wether": "Wether"
+  },
+  "statusOptions": {
+    "active": "Active",
+    "deceased": "Deceased",
+    "other": "Other",
+    "sold": "Sold",
+    "transferred": "Transferred"
+  },
+  "colors": {
+    "white": "White",
+    "beige": "Beige",
+    "lightFawn": "Light Fawn",
+    "darkFawn": "Dark Fawn",
+    "mediumFawn": "Medium Fawn",
+    "mediumBrown": "Medium Brown",
+    "darkBrown": "Dark Brown",
+    "bayBlack": "Bay Black",
+    "trueBlack": "True Black",
+    "darkSilverGrey": "Dark Silver Grey",
+    "mediumSilverGrey": "Medium Silver Grey",
+    "lightSilverGrey": "Light Silver Grey",
+    "darkRoseGrey": "Dark Rose Grey / Roan",
+    "mediumRoseGrey": "Medium Rose Grey",
+    "lightRoseGrey": "Light Rose Grey",
+    "pinto": "Pinto",
+    "appaloosa": "Appaloosa",
+    "black": "Black",
+    "blackAndWhite": "Black and White"
+  },
+  "forSaleStatusOptions": {
+    "forSale": "For sale",
+    "notForSale": "Not for sale",
+    "freeToAGoodHome": "Free to a good home"
+  },
+  "weight": {
+    "weight": "Weight",
+    "chartTitle": "Weight graph",
+    "addWeight": "Add weight",
+    "createWeight": "Create a weight record",
+    "deleteWeight": "Delete weight",
+    "deleteDescription": "Do you really want to delete the weight record?"
+  },
+  "medication": {
+    "medication": "Medication",
+    "addMedication": "Add Medication",
+    "editMedication": "Edit Medication",
+    "deleteMedication": "Delete Medication",
+    "remind": "Remind due",
+    "medicationDue": "Medication due",
+    "nextQuantity": "Next quantity (in ml)",
+    "dose": "Dose (in ml)",
+    "moreRemind": "and {{ item }} more",
+    "remindDate": "Remind date",
+    "doseRaw": "Dose",
+    "ml": "ml",
+    "remindOptions": {
+      "inMonth": "In {{ item }} month",
+      "inMonths": "In {{ item }} months",
+      "12": "In a year",
+      "none": "Don't remind"
+    }
+  }
+}

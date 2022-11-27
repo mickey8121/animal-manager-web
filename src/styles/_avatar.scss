@@ -1,0 +1,37 @@
+.avatar {
+  border-radius: $round-md;
+  background: $primary !important;
+  color: $neutral-900 !important;
+}
+
+.avatar-uploadable {
+  position: relative;
+  transition: all 1s;
+  cursor: pointer;
+  transition: none;
+
+  &:hover {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: $round-md;
+      background: #fff8 url(../icons/camera.svg) center no-repeat;
+      background-size: 50%;
+      animation: appearance .2s;
+      z-index: 1;
+    }
+  }
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

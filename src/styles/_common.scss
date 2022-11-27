@@ -1,0 +1,61 @@
+a {
+  color: $neutral-900;
+  text-decoration: none;
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: $neutral-900;
+    text-decoration: none;
+  }
+}
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  font-family: $font-family-base;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.margin-left-xs {
+  margin-left: 15px;
+}
+
+.margin-bottom-s {
+  @include flexible-value((
+    prop: margin-bottom,
+    value: 22px,
+    value-lg: 17px,
+    value-sm: 14px,
+  ));
+}
+
+.count-hint {
+  min-width: 26px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 9px;
+  background-color: $primary;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}

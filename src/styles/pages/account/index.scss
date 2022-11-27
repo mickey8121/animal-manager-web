@@ -1,0 +1,27 @@
+.account {
+  background-color: $neutral-150;
+
+  .account-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 100;
+
+    @include flexible-value((
+      prop: top,
+      value: 10px,
+      value-lg: 5px,
+      value-xs: -10px,
+    ));
+
+    @include flexible-value((
+      prop: right,
+      value: 16px,
+      value-lg: 8px,
+      value-sm: 0,
+      value-xs: 0,
+    ));
+  }
+
+  @import 'subscription-plans';
+}

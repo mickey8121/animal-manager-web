@@ -1,0 +1,53 @@
+.waitlist-widget {
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 auto !important;
+
+  @include flexible-values((
+    prop: padding,
+    directions: (top left bottom right),
+    values: (25px, 72px, 25px, 72px),
+    values-xs: (0, 0, 0, 0),
+  ));
+
+  @include flexible-value((
+    prop: box-shadow,
+    value: $box-shadow,
+    value-xs: none,
+  ));
+
+  .container--waitlistapi {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    form {
+      @include flexible-value((
+        prop: flex,
+        value: 1,
+        value-xs: 0,
+      ));
+
+      .questionDivider--waitlistapi {
+        display: none;
+      }
+
+      .button--waitlistapi {
+        margin-top: 25px;
+      }
+    }
+
+    h1 {
+      display: flex;
+      flex: 4;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      text-align: center;
+      font-family: $secondary-font, $font-family-base;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 34px;
+    }
+  }
+}

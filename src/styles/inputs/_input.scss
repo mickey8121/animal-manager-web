@@ -1,0 +1,28 @@
+input[type=number]::-webkit-inner-spin-button {
+  display: none;
+}
+
+input[type=checkbox] {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  box-shadow: none !important;
+  background-color: transparent;
+  border: solid 2px $neutral-300;
+  border-radius: $round-sm;
+  outline: 0;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+
+  &:checked {
+    background-color: $primary-600;
+    background-image: url('/icons/checked.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: $primary-600;
+  }
+}

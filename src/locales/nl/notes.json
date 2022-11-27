@@ -1,0 +1,11 @@
+{
+  "myNotes": "Mijn notities",
+  "notes": "Opmerkingen:",
+  "note": "De notitie",
+
+  "noteDelete": "Notitie verwijderen",
+  "deleteNoteConfirm": "De notitie wordt permanent verwijderd",
+  "notePlaceholder": "Schrijf hier een notitie...",
+  "addNote": "Notitie toevoegen",
+  "emptyNote": "Opmerking mag niet leeg zijn!"
+}

@@ -1,0 +1,13 @@
+.breadcrumbs {
+  display: flex;
+
+  .breadcrumb {
+    margin: 0;
+    padding: 0;
+    background: none;
+  }
+
+  .breadcrumbs-separator {
+    margin: 0 6px;
+  }
+}

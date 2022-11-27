@@ -1,0 +1,75 @@
+$pale-gray: #fafafa;
+$light-gray: #f2f2f2;
+$silver-gray: #dedede;
+$bone-gray: #e7e7e7;
+$dusty-gray: #999;
+$whisper-gray: #eee;
+$neutral-500-glass: #ccc3;
+$dark-gray: #666;
+$light-gray: #f2f2f2;
+$martinique: #2c2543;
+$pale-sky: #667180;
+$white-lilac: #f6f7fb;
+$manatee: #9197a3;
+$mercury: #E8E8E8;
+$wild-sand: #F7F7F7;
+
+$link-font-color: #1473E6;
+
+$error-100: #FFE8E3;
+$error-500: #FF5252;
+$error-600: #E61414;
+$error-700: #BC1010;
+
+$positive-100: #DEF7E7;
+$positive-500: #4EE02A;
+$positive-700: #28AE56;
+
+$neutral-100: #FFFFFF;
+$neutral-150: #F7F7F7;
+$neutral-200: #E8E8E8;
+$neutral-300: #D4D4D4;
+$neutral-500: #8F8F8F;
+$neutral-800: #666666;
+$neutral-900: #282531;
+
+$shadow-md: 2px 2px 10px 0 rgba(0, 0, 0, 0.15);
+$shadow-sm: 1px 2px 10px rgba(0, 0, 0, 0.1);
+
+$round-sm: 4px;
+$round-md: calc(#{$round-sm} * 2);
+$round-lg: calc(#{$round-sm} * 3);
+
+$box-shadow: 0px 0px 24px -4px rgba(44, 37, 67, 0.08), 0px 0px 12px -6px rgba(44, 37, 67, 0.08);
+$in-valid: rgba(220, 53, 69, 0.25);
+
+$whisper-gray-hover: darken($whisper-gray, 5);
+$primary-hover: desaturate(darken($primary, 5), 20);
+$primary-opacity: transparentize($primary, 0.6);
+$primary-darken: darken($primary, 48);
+
+$font-family-base: 'Inter',
+-apple-system,
+'BlinkMacSystemFont',
+'Segoe UI',
+'Roboto',
+'Helvetica Neue',
+'Arial',
+'Noto Sans',
+'Liberation Sans',
+'sans-serif',
+'Apple Color Emoji',
+'Segoe UI Emoji',
+'Segoe UI Symbol',
+'Noto Color Emoji';
+$primary-font: 'Inter';
+$secondary-font: 'Poppins';
+
+$input-height: calc(2em + 0.75rem + 2px);
+$input-border-radius: 6px;
+$primary-focus-shadow: 0px 0px 0px 1px $primary;
+$primary-btn-focus-shadow: 0px 4px 6px -4px transparentize($primary, 0.8), 0px 8px 8px -4px transparentize($primary, 0.8);
+$secondary-btn-focus-shadow: 0px 0px 4px -2px transparentize($neutral-900, 0.88), 0px 0px 16px -2px transparentize($neutral-900, 0.88);
+$secondary-focus-border: 1px solid $neutral-500;
+
+$modal-content-border-radius: 12px;

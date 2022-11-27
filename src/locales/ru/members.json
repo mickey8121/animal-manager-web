@@ -1,0 +1,14 @@
+{
+  "addNewMembers": "Добавить новых участников",
+  "invite": "Пригласить",
+  "herdMembers": "Участники стада",
+  "inviteNewMembers": "Пригласить новых участников",
+  "members": "Участники",
+  "member": "Участник",
+  "action": {
+    "invite": "{{entity}} приглашен{{ ruEnding }}",
+    "delete": "{{entity}} удален",
+    "processing": "Обработка"
+  },
+  "sameMembers": "Указаны одинаковые адреса электронной почты"
+}

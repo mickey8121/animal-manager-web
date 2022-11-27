@@ -1,0 +1,64 @@
+{
+  "accountPageHeader": {
+    "subText": "Geniet van premiumfuncties met een maandelijks abonnement.",
+    "text": "Account"
+  },
+  "descriptions": {
+    "alpacaAssociations": "Voor nieuwe en bestaande verenigingen die ledenvoordelen willen aanbieden.",
+    "alpacaBreeder": "Voor de serieuze {{ appNameLowerCase }} fokker die op zoek is naar extra features.",
+    "alpacaOwner": "Voor elke {{ appNameLowerCase }}-eigenaar die de gezondheid van zijn {{ herd }} wil verbeteren.",
+    "developer": "Voor nieuwe en bestaande verenigingen die ledenvoordelen willen aanbieden."
+  },
+  "names": {
+    "alpacaAssociations": "{{ appName }} Verenigingen",
+    "alpacaBreeder": "{{ appName }} Fokker",
+    "alpacaOwner": "{{ appName }}-eigenaar",
+    "developer": "Ontwikkelaar"
+  },
+  "prices": {
+    "freeForEveryone": "Gratis voor iedereen",
+    "letsHaveAChat": "Laten we een praatje maken",
+    "perMemberSubscription": "Per lid abonnement",
+    "perMonth": "{{ context }}/maand"
+  },
+  "advantages": {
+    "alpacaOwner": [
+      "Onbeperkte {{ appNameLowerCase }}-records",
+      "Onbeperkt {{ herds }} en groepen",
+      "Volledig {{ appNameLowerCase }}-registratieprofiel",
+      "Records delen met andere gebruikers",
+      "Medicatie met herinneringen",
+      "Scheer- en vliesrecords",
+      "Zoek {{ appNameLowerCase }} te koop wereldwijd",
+      "Gratis mobiele applicaties",
+      "Upload afbeeldingen"
+    ],
+    "alpacaBreeder": [
+      "Inclusief $t(billingPlans.names.alpacaOwner)-functies",
+      "Lijst {{ appNameLowerCase }} te koop",
+      "Marketingtools voor {{ appNameLowerCase }}-verkopers",
+      "Geen minimumcontract"
+    ],
+    "alpacaAssociations": [
+      "Bevat $t(billingPlans.names.alpacaBreeder)-functies",
+      "Toon beheer",
+      "Ledenbeheer",
+      "Verwerking van betalingen",
+      "Marketingtools",
+      "Ledenlijst",
+      "Registratie van nieuwe {{ appNameLowerCase }}",
+      "Selfservice administratie",
+      "Geregistreerde eigendomsoverdracht"
+    ],
+    "developer": [
+      "Bestaande applicaties uitbreiden",
+      "Integreren met landbouwmachines",
+      "Offline analyses uitvoeren",
+      "Nieuwe functies en tools toevoegen",
+      "Markt aan andere gebruikers online",
+      "Ondersteuningsopties voor ontwikkelaars",
+      "Selfservice administratie"
+    ]
+  },
+  "thisIsAlreadyUrCurrentPlan": "Dit is al je huidige abonnement"
+}

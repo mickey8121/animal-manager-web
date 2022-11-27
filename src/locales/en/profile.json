@@ -1,0 +1,46 @@
+{
+  "profile": "Profile",
+
+  "goodMorning": "Good Morning",
+  "goodAfternoon": "Good Afternoon",
+  "goodEvening": "Good Evening",
+
+  "personalProfile": "Personal profile",
+  "logout": "Logout",
+  "signOut": "Sign out",
+  "confirmLogout": "Do you really want to logout?",
+
+  "city": "City",
+  "cityLength": "City must be at least 2 characters",
+
+  "country": "Country",
+  "countryLength": "Country must be at least 2 characters",
+
+  "language": "Language",
+
+  "breederProfile": "Breeder profile",
+
+  "contactEmail": "Contact email",
+
+  "contactPhone": "Contact phone",
+  "contactPhoneInvalid": "Please enter a valid phone number",
+
+  "breederBio": "Breeder Bio",
+
+  "mySubscription": "My subscription",
+  "freePlan": "Free tariff plan",
+
+  "animalOwner_alpaca": "Alpaca Owner",
+  "animalOwner_llama": "Lam Owner",
+  "animalOwner_sheep": "Sheep Owner",
+
+  "tryPlan_alpaca": "Try the «Breeder» plan with more incredible features to manage your alpacas.",
+  "tryPlan_llama": "Try the «Breeder» plan with more incredible features to manage your llamas.",
+  "tryPlan_sheep": "Try the «Breeder» plan with more incredible features to manage your sheeps.",
+
+  "animalBreeder_alpaca": "Alpaca Breeder",
+  "animalBreeder_llama": "Lam Breeder",
+  "animalBreeder_sheep": "Sheep Breeder",
+
+  "breeder": "Breeder"
+}

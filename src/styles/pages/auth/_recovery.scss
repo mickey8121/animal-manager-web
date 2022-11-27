@@ -1,0 +1,69 @@
+.recovery {
+  justify-content: flex-start;
+
+  .auth-heading {
+    flex: 0;
+    margin-bottom: 50px;
+  }
+  
+  .auth-form {
+    @include flexible-value((
+      prop: flex,
+      value: 0,
+      value-xs: 1,
+    ));
+  
+    @include flexible-value((
+      prop: justify-content,
+      value: normal,
+      value-xs: center,
+    ));
+  
+    @include flexible-values((
+      prop: padding,
+      directions: (top left bottom right),
+      values: (64px, 72px, 64px, 72px),
+      values-xs: (0, 0, 0, 0),
+    ));
+  
+    .auth-form-heading {
+      flex: 0;
+  
+      @include flexible-value((
+        prop: margin-top,
+        value: 0,
+        value-xs: -50px,
+      ));
+    }
+
+    .btn-back {
+      margin: 15px 0 -28px;
+      color: $neutral-300;
+
+      &:hover {
+        color: $neutral-500;
+      }
+    }
+  
+    .form-group:last-child {
+      padding: 0;
+      width: 100%;
+    }
+  
+    .form-group {
+      @include flexible-value((
+        prop: flex,
+        value: 1,
+        value-xs: 0,
+      ));
+    }
+  
+    .recovery-text {
+      @include default-font-size;
+  
+      margin-bottom: 52px;
+      text-align: center;
+      color: $neutral-500;
+    }
+  }
+}

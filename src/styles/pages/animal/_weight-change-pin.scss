@@ -1,0 +1,20 @@
+.weight-change-cell {
+  margin: 0;
+  padding: 8px 9px;
+  border-radius: $round-md;
+
+  &.negative {
+    background-color: $error-100;
+    color: $error-700;
+  }
+
+  &.positive {
+    background-color: $positive-100;
+    color: $positive-700;
+  }
+
+  &.neutral {
+    background-color: $neutral-150;
+    color: $neutral-900;
+  }
+}

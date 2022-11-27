@@ -1,0 +1,36 @@
+.coloration-pin {
+  display: flex;
+  width: 100%;
+
+  .visible-value, .hidden-count {
+    border-radius: $round-md;
+    
+    // temporary
+    font-style: normal;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .visible-value {
+    padding: 2px 8px;
+    background-color: $wild-sand;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    // temporary
+    font-weight: 400;
+    letter-spacing: 0em;
+  }
+
+  .hidden-count {
+    flex: 0 0;
+    width: fit-content;
+    margin-left: 4px;
+    padding: 1px 8px;
+    border: 1px solid #E8E8E8; // Neutrals/200
+
+    // temporary
+    font-weight: normal;
+  }
+}

@@ -1,0 +1,112 @@
+.subscription-plans {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+
+  @include flexible-value((
+    prop: gap,
+    value: 16px 32px,
+    value-lg: 16px 24px,
+    value-sm: 16px 16px,
+  ));
+
+  .subscription-plan-item {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 255px;
+    max-width: 280px;
+    height: fit-content;
+    border-radius: $round-md;
+    background-color: $white;
+    box-shadow: 0px 0px 24px -4px rgba(44, 37, 67, 0.08), 0px 0px 12px -6px rgba(44, 37, 67, 0.08);
+
+    .plan-main-info {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 354px;
+      border-radius: $round-md;
+      box-shadow: 0px 0px 24px -4px rgba(44, 37, 67, 0.08), 0px 0px 12px -6px rgba(44, 37, 67, 0.08);
+
+      @include flexible-value((
+        prop: padding,
+        value: 32px 32px 36px,
+        value-lg: 24px 24px 28px,
+        value-sm: 32px 32px 36px,
+      ));
+
+      & > div {
+        font-family: $secondary-font;
+        letter-spacing: 0em;
+      }
+
+      .plan-name {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        height: 66px;
+        margin-bottom: 16px;
+        font-size: 33px;
+        font-weight: 600;
+        line-height: 33px;
+        vertical-align: middle;
+      }
+
+      .plan-price {
+        margin-bottom: 32px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        color: $primary-700;
+      }
+
+      .plan-description {
+        margin-bottom: 32px;
+        font-family: $primary-font;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        color: $neutral-800;
+      }
+
+      .plan-btn {
+        flex-shrink: 0;
+        margin-top: auto;
+      }
+    }
+
+    .plan-advantages {
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+      padding: 45px 32px 37px;
+
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+
+      .plan-advantages-item {
+        display: flex;
+        flex-direction: row;
+
+        .plan-advantages-item-icon {
+          width: 16px;
+          height: 100%;
+          margin-top: 3px;
+          margin-right: 12px;
+          content: url(../../../icons/advantage-checkbox.svg);
+        }
+
+        span.plan-advantages-item-text {
+          display: inline-block;
+          color: $neutral-800;
+        }
+      }
+    }
+  }
+}

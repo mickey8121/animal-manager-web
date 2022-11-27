@@ -1,0 +1,64 @@
+{
+  "accountPageHeader": {
+    "subText": "Genießen Sie Premium-Funktionen mit einem monatlichen Abonnement.",
+    "text": "Account"
+  },
+  "descriptions": {
+    "alpacaAssociations": "Für neue und bestehende Verbände, die Mitgliedervorteile anbieten möchten.",
+    "alpacaBreeder": "Für den ernsthaften {{ appName }}züchter, der nach zusätzlichen Funktionen sucht.",
+    "alpacaOwner": "Für jeden {{ appName }}besitzer, der die Gesundheit seiner {{ herd }} verbessern möchte.",
+    "developer": "Für neue und bestehende Verbände, die Mitgliedervorteile anbieten möchten."
+  },
+  "names": {
+    "alpacaAssociations": "{{ appName }}-Vereine",
+    "alpacaBreeder": "{{ appName }}-Züchter",
+    "alpacaOwner": "{{ appName }}-Besitzer",
+    "developer": "Entwickler"
+  },
+  "prices": {
+    "freeForEveryone": "Kostenlos für alle",
+    "letsHaveAChat": "Lass uns plaudern",
+    "perMemberSubscription": "Pro Mitgliedsabonnement",
+    "perMonth": "{{ context }}/Monat"
+  },
+  "advantages": {
+    "alpacaOwner": [
+      "Unbegrenzte {{ appName }}-Rekorde",
+      "Unbegrenzte {{ herds }} und Gruppen",
+      "Vollständiges {{ appName }}-Registrierungsprofil",
+      "Datensätze mit anderen Benutzern teilen",
+      "Medikamente mit Erinnerungen",
+      "Scher- und Vliesplatten",
+      "Suche nach {{ appName }}s zum Verkauf weltweit",
+      "Kostenlose mobile Anwendungen",
+      "Bilder hochladen"
+    ],
+    "alpacaBreeder": [
+      "Enthält Funktionen für $t(billingPlans.names.alpacaOwner)",
+      "{{ appName }} zum Verkauf anbieten",
+      "Marketing-Tools für {{ appName }}-Verkäufer",
+      "Kein Mindestvertrag"
+    ],
+    "alpacaAssociations": [
+      "Enthält $t(billingPlans.names.alpacaBreeder)-Funktionen",
+      "Showmanagement",
+      "Mitgliederverwaltung",
+      "Zahlungsabwicklung",
+      "Marketing Werkzeuge",
+      "Mitgliederverzeichnis",
+      "Registrierung neuer {{ appName }}",
+      "Self-Service-Verwaltung",
+      "Eingetragene Eigentumsübertragung"
+    ],
+    "developer": [
+      "Erweitern Sie bestehende Anwendungen",
+      "Integration mit landwirtschaftlichen Geräten",
+      "Offline-Analysen durchführen",
+      "Neue Funktionen und Tools hinzufügen",
+      "Vermarkten Sie online an andere Benutzer",
+      "Supportoptionen für Entwickler",
+      "Self-Service-Verwaltung"
+    ]
+  },
+  "thisIsAlreadyUrCurrentPlan": "Dies ist bereits Ihr aktueller Plan"
+}

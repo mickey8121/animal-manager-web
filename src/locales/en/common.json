@@ -1,0 +1,109 @@
+{
+  "and": "and",
+  "or": "or",
+
+  "close": "Close",
+
+  "date": "Date",
+  "customDate": "Custom date",
+  "today": "Today",
+  "length": "Length",
+
+  "name": "Name",
+  "submit": "Submit",
+  "save": "Save",
+  "create": "Create",
+  "edit": "Edit",
+  "upgrade": "Upgrade",
+  "cancel": "Cancel",
+  "manage": "Manage",
+  "confirm": "Confirm",
+  "loading": "Loading",
+  "back": "Back",
+  "delete": "Delete",
+  "add": "Add",
+  "new": "New",
+  "ok": "Ok",
+  "type": "Type",
+  "data": "Data",
+  "notFound": "Not found",
+  "menu": "Menu",
+
+  "commingSoon": "Comming soon",
+  "currentPlan": "Current Plan",
+  "findOutMore": "Find out more",
+
+  "saving": "Saving...",
+  "errorSaving": "Could not save",
+  "successSaving": "{{ item }} saved",
+
+  "deleting": "Deleting...",
+  "errorDelete": "Could not delete",
+  "successDelete": "{{ item }} deleted",
+
+  "creating": "Creating...",
+  "errorCreate": "Could not create",
+  "successCreate": "{{ item }} created",
+
+  "adding": "Adding...",
+  "errorAdd": "Could not add",
+  "successAdd": "{{ item }} added",
+
+  "updating": "Updating...",
+  "errorUpdate": "Could not update",
+  "successUpdate": "{{ item }} updated",
+
+  "uploading": "Uploading...",
+
+  "fieldIsRequired": "{{ context }} is required",
+
+  "select": "Select",
+
+  "deleteRecordConfirm": "The {{ context }} will be removed permanently",
+  "deleteConfirm": "Are you sure?",
+  "createAccount": "Create account",
+  "renew": "Renew",
+  "entry": "Entry",
+
+  "somethingWrong": "Something went wrong...",
+  "tryReload": "Try to reload the page",
+  "pageIsUnderDev": "The page is under development",
+
+  "getAccess": "Get access to all features",
+
+  "googleError": "Problems with the google server, try another authorization method please",
+  "appleError": "Problems with the apple server, try another authorization method please",
+
+  "minLength": "Minimum length {{count}} character",
+  "minLength_plural": "Minimum length {{count}} characters",
+  "maxLength": "Maximum length {{count}} character",
+  "maxLength_plural": "Maximum length {{count}} characters",
+  "onlyInt": "Use only integer numbers",
+
+  "minValue": "Minimum value is {{value}}",
+  "maxValue": "Maximum value is {{value}}",
+
+  "dataWillBe": "Your data will be here",
+  "change": "Change",
+  "action": "Action",
+  "history": "History",
+
+  "noEntriesMessage": "No entries here yet",
+  "noEntriesHint": "Use the button above to add first entry",
+
+  "rowsPerPage": "Rows per page",
+
+  "scale": "Scale",
+  "upload": "Upload",
+  "imageUploaded": "Image successfully uploaded",
+  "uploadImage": "Upload Image",
+  "clickOrDrag": "Click or Drag file here",
+
+  "underDev": {
+    "admin": "AANZ Administrator",
+    "partnership": "AANZ Partnership",
+    "convenor": "Show Convenor",
+    "fleece": "Fleece Management",
+    "sale": "{{ animal }} for sale"
+  }
+}

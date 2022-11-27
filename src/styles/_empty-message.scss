@@ -1,0 +1,25 @@
+.empty-message {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  .empty-message-text {
+    margin-bottom: 8px;
+    text-align: center;
+    color: $neutral-900;
+
+    @include profile-name-font;
+  }
+
+  .empty-message-hint {
+    margin-bottom: 31px;
+    text-align: center;
+    color: $dusty-gray;
+
+    @include flexible-default-font-size;
+  }
+}

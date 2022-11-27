@@ -1,0 +1,77 @@
+
+.auth-page {
+  padding: 0 40px;
+  display: flex;
+  min-height: 100vh;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: auto;
+
+  @include flexible-values((
+    prop: padding,
+    directions: (top left bottom right),
+    values: (56px, 40px, 0, 40px),
+    values-xs: (32px, 12px, 0, 12px),
+  ));
+
+  @include flexible-value((
+    prop: background-color,
+    value: transparent,
+    value-xs: $white,
+  ));
+
+  .select-language {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0;
+
+    .form-group {
+      width: 100%;
+      margin: 0;
+    }
+
+    @include flexible-value((
+      prop: width,
+      value: 176px,
+      value-xs: 100%,
+    ));
+
+    @include flexible-value((
+      prop: justify-content,
+      value: center,
+      value-xs: flex-end,
+    ));
+  }
+
+
+  .react-custom-select__control {
+    background-color: transparent;
+
+    @include default-font-size;
+  }
+
+  .auth-heading {
+    margin-bottom: 33px;
+    display: flex;
+    text-align: center;
+
+    @include flexible-value((
+      prop: align-items,
+      value: center,
+      value-xs: flex-start,
+    ));
+
+    @include main-title-font;
+  }
+
+  @import 'auth-form';
+}
+
+@import 'recovery';
+@import 'waitlist-widget';
+
+

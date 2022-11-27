@@ -1,0 +1,48 @@
+.loading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loader {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid 3px $primary;
+    border-bottom: solid 3px transparent;
+    animation: rotate 0.75s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+
+  &.page, &.fullscreen {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    overflow: hidden;
+
+    .loader {
+      @extend .loader;
+
+      width: 60px;
+      height: 60px;
+      border-width: 5px;
+    }
+  }
+
+  &.fullscreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

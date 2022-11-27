@@ -1,0 +1,23 @@
+overwrite: true
+schema: ${REACT_APP_API_URL}
+documents: src/graphql/**/*.{ts,tsx,graphql}
+hooks:
+  afterOneFileWrite:
+    - eslint --fix
+generates:
+  src/generated/graphql.tsx:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+    config:
+      reactApolloVersion: 3
+      gqlImport: "@apollo/client#gql"
+      withHOC: false
+      withHooks: true
+      withComponent: false
+  src/startup/apollo/cache-options.ts:
+    plugins:
+      - fragment-matcher
+    config:
+      apolloClientVersion: 3

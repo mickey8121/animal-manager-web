@@ -1,0 +1,105 @@
+ // main modal styles
+.custom-modal {
+  height: fit-content;
+  justify-content: center;
+ 
+  .modal-content {
+    max-width: 498px;
+    overflow: auto;
+  }
+
+  .modal-body {
+    padding: 40px 76px 56px;
+
+    .btn-primary {
+      width: 100%;
+    }
+
+    textarea {
+      min-height: 80px;
+    }
+
+    .button-group {
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+
+      .btn-primary {
+        width: auto;
+        min-width: 141px;
+      }
+
+      .btn-secondary {
+        background-color: transparent;
+        padding-left: 0;
+
+        &:hover {
+          color: $error-500;
+        }
+      }
+    }
+  }
+
+  .custom-modal-header,
+  .custom-modal-footer {
+    border: none;
+
+    &.bordered {
+      border-bottom: 1px solid #0005;
+    }
+  }
+
+  .custom-modal-header {
+    padding: 56px 76px 0;
+
+    .close {
+      margin: -49px -66px -16px auto;
+      opacity: 1;
+      color: $neutral-300;
+      transition: color .2s ease;
+
+      &:hover { 
+        color: $neutral-500;
+      }
+    }
+
+    .modal-title {
+      @include poppins-l-font;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    margin: 0;
+ 
+    .modal-content {
+      margin: 0;
+      height: 100vh;
+      max-width: 100%;
+      border-radius: 0;
+    }
+
+    .custom-modal-header {
+      padding: 72px 12px 0;
+
+      .close {
+        margin: -78px -12px 0px 0;
+      }
+    }
+
+    .modal-body {
+      padding: 32px 12px 12px;
+    
+      form {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+
+        .btn[type='submit'] {
+          margin-top: auto;
+        }
+      }
+    }
+  }
+}
+
+@import "members";

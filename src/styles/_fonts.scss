@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-display: swap;
+  src: local('Inter-Regular'), url('./fonts/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-display: swap;
+  src: local('Inter-Medium'), url('./fonts/Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-display: swap;
+  src: local('Poppins-Medium'), url('./fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-display: swap;
+  src: local('Poppins-SemiBold'), url('./fonts/Poppins-SemiBold.ttf') format('truetype');
+}

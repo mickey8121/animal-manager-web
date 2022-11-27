@@ -1,0 +1,17 @@
+.textarea-note {
+  height: 100px;
+  margin-top: 20px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  user-select: text;
+  resize: unset;
+
+  &:focus {
+    border: 0;
+    outline: none;
+    resize: none;
+  }
+
+  @include default-font-size;
+}

@@ -1,0 +1,16 @@
+.herds-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 32px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+  @include flexible-value((
+    prop: padding-bottom,
+    value: 60px,
+    value-lg: 30px,
+    value-sm: 20px,
+  ));
+
+  @import 'herd-card';
+}

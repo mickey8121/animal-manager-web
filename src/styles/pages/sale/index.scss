@@ -1,0 +1,230 @@
+.sale-page {
+  .bottom-header {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+
+    .content {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      background-color: $white;
+      border-radius: $round-lg;
+      gap: 24px 0;
+
+      @include flexible-value((
+        prop: gap,
+        value: 24px 0,
+        value-xs: 10px,
+      ));
+
+      @include flexible-value((
+        prop: flex-flow,
+        value: wrap,
+        value-sm: wrap-reverse,
+        value-xs: wrap-reverse,
+      ));
+
+      @include flexible-values((
+        prop: padding,
+        directions: (top right bottom left),
+        values: (12px 26px 12px 26px),
+        values-sm: (27px 26px 27px 26px),
+      ));
+
+      .separator {
+        display: inline-block;
+        border: 1px solid $neutral-300;
+
+        @include flexible-value((
+          prop: margin,
+          directions: (top right bottom left),
+          value: (0 20px 0 0),
+          value-sm: (0 20px 0 0),
+          value-xs: (0),
+        ));
+
+        @include flexible-value((
+          prop: height,
+          value: 26px,
+          value-sm: 0,
+          value-xs: 0,
+        ));
+
+        @include flexible-value((
+          prop: width,
+          value: 0,
+          value-sm: 100%,
+          value-xs: 100%,
+        ));
+      }
+
+      label {
+        display: flex;
+        align-items: center;
+        margin: 0 20px 0 0;
+
+        input {
+          margin-right: 12px;
+        }
+
+        @include label-font-size;
+      }
+    }
+  }
+
+  .table-content-wrap {
+    .avatar {
+      margin-right: 12px;
+    }
+  }
+
+  .page-body {
+
+    @include flexible-value((
+      prop: padding-top,
+      value: 16px !important,
+      value-xs: 12px !important,
+    ));
+
+    .pagination-controls {
+      margin-top: 11px;
+    }
+  }
+}
+
+.sale-page-profile {
+  @include flexible-value((
+    prop: padding-right,
+    value: 34px,
+    value-sm: 0,
+  ));
+
+  .page-body {
+    display: inline-block;
+    background-color: $white;
+
+    @include flexible-value((
+      prop: padding,
+      value: 28px !important,
+      value-sm: 16px !important,
+    ));
+
+    @include flexible-value((
+      prop: flex,
+      value: 0 !important,
+      value-sm: 1 1,
+    ));
+
+    .content {
+      .details {
+        .row:last-child{
+          margin-top: 20px;
+        }
+      }
+
+      .breeder-info {
+        .row {
+          gap: 20px;
+        }
+
+        @include flexible-value((
+          prop: margin-top,
+          value: 46px !important,
+          value-sm: 40px !important,
+        ));
+      }
+
+      .animal-name, .breeder-info-heading {
+
+        @include flexible-value((
+          prop: margin-bottom,
+          value: 28px !important,
+          value-sm: 24px !important,
+        ));
+      }
+
+      .name {
+        overflow-wrap: break-word;
+      }
+
+      p, span{
+        margin: 0;
+        color: $neutral-800;
+
+        .name {
+          overflow-wrap: break-word;
+        }
+
+        @include media-breakpoint-only(xs) {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 20px;
+        }
+
+        @include flexible-value((
+          prop: width,
+          value: 194px !important,
+          value-sm: 64px !important,
+        ));
+      }
+
+      h6 {
+
+        @include media-breakpoint-only(xs) {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 20px;
+        }
+      }
+
+      .animal-info {
+        display: flex;
+
+        .avatar {
+          max-width: unset !important;
+
+          @include flexible-value((
+            prop: width,
+            value: 194px !important,
+            value-sm: 64px !important,
+          ));
+
+          @include flexible-value((
+            prop: height,
+            value: 194px !important,
+            value-sm: 64px !important,
+          ));
+
+          img {
+            max-width: unset !important;
+            border-radius: $round-md;
+
+            @include flexible-value((
+              prop: width,
+              value: 194px !important,
+              value-sm: 64px !important,
+            ));
+
+            @include flexible-value((
+              prop: height,
+              value: 194px !important,
+              value-sm: 64px !important,
+            ));}
+        }
+
+        .description {
+          padding-left: 32px; //32px
+
+          .animal-name{
+
+            @include flexible-value((
+              prop: display,
+              value: block,
+              value-sm: none,
+            ));
+          }
+        }
+      }
+    }
+  }
+}
